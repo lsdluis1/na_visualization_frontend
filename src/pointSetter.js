@@ -102,8 +102,8 @@ export default function PositionSetter(props) {
         canvasStyle={{ width: 1600, height: 1000 }}
       />
 
-      <p>{JSON.stringify(props)}</p>
-      <p>{JSON.stringify(pp)}</p>
+      {/* <p>{JSON.stringify(props)}</p>
+      <p>{JSON.stringify(pp)}</p> */}
     </div>
   );
 }
