@@ -27,7 +27,7 @@ function PointCanvas(props) {
 
     draw(context, pathPoints, lineStyle);
     points.map((point) => {
-      drawCoordinates(context, point.x, point.y, pointStyle);
+      drawCoordinates(context, point.position.x, point.position.y, pointStyle);
     });
   }, [points, pathPoints]);
 

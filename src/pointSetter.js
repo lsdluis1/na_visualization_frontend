@@ -11,8 +11,8 @@ const pivotalPoints = [];
 export default function PositionSetter(props) {
   const [pp, setPivotalPoints] = useState([]);
   const [pathPoints, setPathPoints] = useState([]);
-  const apiUrl = "http://localhost:5000";
-
+  // const apiUrl = "https://www.dawnpond.me:80";
+  const apiUrl = "http://localhost:80";
   const connection = useRef(null);
 
   useEffect(() => {
@@ -89,7 +89,11 @@ export default function PositionSetter(props) {
             animationFrameCount={animationFrameCount}
             handleDrag={throttledHandleDragRef.current}
             point={point}
-            pointStyle={{ pointSize: 10, color: "yellow" }}
+            pointStyle={{
+              // Just for debugging
+              pointSize: 10,
+              color: "yellow",
+            }}
           />
         );
       })}
