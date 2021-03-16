@@ -11,8 +11,8 @@ const pivotalPoints = [];
 export default function PositionSetter(props) {
   const [pp, setPivotalPoints] = useState([]);
   const [pathPoints, setPathPoints] = useState([]);
-  // const apiUrl = "https://www.dawnpond.me:80";
-  const apiUrl = "http://localhost:80";
+  const apiUrl = "https://www.dawnpond.me";
+  // const apiUrl = "http://localhost:80";
   const connection = useRef(null);
 
   useEffect(() => {
